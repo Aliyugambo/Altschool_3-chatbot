@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>ChatBot</title>
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="chat.css">
+ 
+</head>
+<body>
+    <div id="main">
+ 
+    <h2>Resturance-ChatBot</h2>
+ 
+        <div id="msg">
+            <div id="robot">
+            <div class="bot"></div>
+            <h3>ChatBot</h3>
+            <!-- <ul ></ul> -->
+          </div>
+          <div id="messages"></div>
+        </div>
+        <form action="" id="chat-form">
+    <div class="input">
+            <input type="text" id="message-input" placeholder="New Message"/>
+            <!-- <input type="text" id="name" placeholder="Name"/> -->
+            <button class="send">Send <i class="fas fa-paper-plane"></i></button>
+        </div>
+    </form>
+</div>
+ 
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <!-- <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script> -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./main.js"></script>
+    <script>
+      // const socket = io();
+
+//  const form = document.getElementById('form');
+//  const input = document.getElementById('input');
+//   const name = document.getElementById('name');
+
+//   form.addEventListener('submit', function(e) {
+//     e.preventDefault();
+//     if (input.value) {
+//       const data = {name: name.value, message: input.value}
+//       console.log('chat_message',data)
+//       socket.emit('chat_message', data);
+//       input.value = '';
+//     }
+//   });
+
+//   socket.on('chat_message', function(data) {
+//     console.log('Server_says', data);
+//     const {name, message} = data
+//     var item = document.createElement('li');
+//     item.textContent = `${name}: ${message}`;
+//     messages.appendChild(item);
+//     window.scrollTo(0, document.body.scrollHeight);
+//   });
+
+//   socket.on('User_connected', function(data) {
+//     console.log('Server_says hi', data);
+//     // io.emit('Server_says hi', msg);
+//     var item = document.createElement('li');
+//     item.textContent = data;
+//     messages.appendChild(item);
+//     window.scrollTo(0, document.body.scrollHeight);
+//   });
+    </script>
+</body>
+</html>
