@@ -7,6 +7,7 @@
       });
 
       // Query DOM elements
+      let users =prompt("Please Enter Your Name");
       const inputField = document.getElementById("inputField");
       const chatBox = document.getElementById("chatBox");
       const sendButton = document.getElementById("sendButton");
@@ -287,7 +288,7 @@
 
       socket.on("connect", () => {
         appendMessage(
-          `Welcome to Mafuz_tech_solutions restaurant\n Select\n1: To Place an order\n97: Current Order\n 98: Order History`,
+          `Hello ${users}\nWelcome to Mafuz_tech_solutions restaurant Do you wants to order something.\nDo so By Selecting Options\n1: To Place an order\n97: Current Order\n 98: Order History`,
           "bot"
         );
       });

@@ -43,6 +43,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 // Socket Connections
+
 let sessionRooms = {};
 io.on("connection", (socket) => {
 	console.log("a user connected");
