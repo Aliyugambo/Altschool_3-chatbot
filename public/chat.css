@@ -322,4 +322,13 @@
         color: rgb(180, 180, 180);
       }
       }
-      
+      .user_name_input{
+        background: none;
+        display: flex;
+        flex-direction: column;
+      }
+      .use_name{
+        border: none;
+        border-bottom: 2px solid rgb(20, 20, 20);
+        margin-top: 40px;
+      }

@@ -6,8 +6,9 @@
         },
       });
 
-      // Query DOM elements
-      let users =prompt("Please Enter Your Name");
+      // // Query DOM elements
+      let users = document.getElementById("user_input");
+      // let users = prompt("Please Enter Your Name")
       const inputField = document.getElementById("inputField");
       const chatBox = document.getElementById("chatBox");
       const sendButton = document.getElementById("sendButton");
@@ -287,10 +288,20 @@
       }
 
       socket.on("connect", () => {
-        appendMessage(
-          `Hello ${users}\nWelcome to Mafuz_tech_solutions restaurant Do you wants to order something.\nDo so By Selecting Options\n1: To Place an order\n97: Current Order\n 98: Order History`,
-          "bot"
-        );
+
+        users.addEventListener("keydown", (event)=>{
+          if(event.key == "Enter"){
+            appendMessage(
+              `Hello ${users}\nWelcome to Mafuz_tech_solutions restaurant Do you wants to order something.\nDo so By Selecting Options\n1: To Place an order\n97: Current Order\n 98: Order History`,
+              "bot"
+            );
+          }
+          
+        });
+        // appendMessage(
+        //   `Hello ${users}\nWelcome to Mafuz_tech_solutions restaurant Do you wants to order something.\nDo so By Selecting Options\n1: To Place an order\n97: Current Order\n 98: Order History`,
+        //   "bot"
+        // );
       });
 
       // Handling receiving messages from the server
