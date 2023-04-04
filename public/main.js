@@ -292,7 +292,7 @@
         users.addEventListener("keydown", (event)=>{
           if(event.key == "Enter"){
             appendMessage(
-              `Hello ${users}\nWelcome to Mafuz_tech_solutions restaurant Do you wants to order something.\nDo so By Selecting Options\n1: To Place an order\n97: Current Order\n 98: Order History`,
+              `Hello \nWelcome to Mafuz_tech_solutions restaurant Do you wants to order something.\nDo so By Selecting Options\n1: To Place an order\n97: Current Order\n 98: Order History`,
               "bot"
             );
           }
