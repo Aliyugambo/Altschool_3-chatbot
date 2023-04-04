@@ -326,9 +326,12 @@
         background: none;
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
+        font-size: 500px;
       }
       .use_name{
         border: none;
-        border-bottom: 2px solid rgb(20, 20, 20);
-        margin-top: 40px;
+        /* border-bottom: 2px solid rgb(20, 20, 20); */
+        margin-top: 70px;
+        margin: 0 auto;
       }
